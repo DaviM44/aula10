@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+<body style="background-color:rgb(131, 0, 0);">
+    <h1>Calculadora</h1>
+    
+        <input id="valor1" type="text"></input>
+        <input id="valor2" type="text"></input>
+        <button type="button" onclick="somar()">Somar</button>
+        <input id="soma" type="text" disabled></input>
+    
+
+    <script>
+        function somar(){
+            var valor1, valor2, soma;
+            valor1 = parseFloat(document.getElementById("valor1").value);
+            valor2 = parseFloat(document.getElementById("valor2").value);
+
+            soma = valor1 + valor2;
+
+            document.getElementById("soma").value = soma;
+        }
+    </script>
+</body>
+</html>
